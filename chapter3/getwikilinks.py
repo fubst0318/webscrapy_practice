@@ -11,7 +11,7 @@ random.seed(datetime.datetime.now())
 def getLinks(articleUrl):
     html = urlopen('https://en.wikipedia.org'+ str(articleUrl))
     bsObj = BeautifulSoup(html)
-    
+    return bsObj
     
 html = urlopen('https://en.wikipedia.org/wiki/Kevin_Bacon')
 bsObj = BeautifulSoup(html)
